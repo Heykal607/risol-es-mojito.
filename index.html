@@ -440,7 +440,7 @@
 
         function kirimKeWA() {
             // Nomor WhatsApp lo yang udah bener
-            const nomorWA = "6289524572656"; 
+            const nomorWA = "6285604071356"; 
             
             const nama = document.getElementById('nama').value.trim();
             const alamat = document.getElementById('alamat').value.trim();
@@ -455,7 +455,7 @@
             if (qtyRisol > 0) teksPesan += `- Risol Mayo: ${qtyRisol} pcs\n`;
             if (qtyMojito > 0) teksPesan += `- Es Mojito: ${qtyMojito} cup\n`;
             
-            teksPesan += `\n*Total Harga:* ${total}\n*Metode Pembayaran:* QRIS\n\n*Data Pengiriman:*\nNama: ${nama}\nAlamat/Titik Kumpul: ${alamat}\n\nIni bukti transfernya min, mohon di-acc ya!`;
+            teksPesan += `\n*Total Harga:* ${total}\n*Metode Pembayaran:* QRIS\n\n*Data Pengiriman:*\nNama: ${nama}\nPesan: ${alamat}\n\nIni bukti transfernya min, mohon di-acc ya!`;
 
             const pesanEncoded = encodeURIComponent(teksPesan);
             
